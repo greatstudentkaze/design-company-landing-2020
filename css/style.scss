@@ -375,9 +375,11 @@ p {
   }
   &__input {
     position: absolute;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
 
     &:checked + .faq__box {
       transform: rotate(0deg);

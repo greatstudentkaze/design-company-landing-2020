@@ -288,9 +288,10 @@ p {
     text-transform: uppercase; }
   .faq__input {
     position: absolute;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none; }
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
     .faq__input:checked + .faq__box {
       transform: rotate(0deg);
       background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 0L12.9952 11.25L0.00480938 11.25L6.5 0Z' fill='%23F7654A'/%3E%3C/svg%3E"); }
