@@ -174,8 +174,7 @@ p {
       padding: 50px; } }
   @media (max-width: 407px) {
     .numbers {
-      margin-top: 50px;
-      margin-bottom: 100px; } }
+      margin-top: 50px; } }
   .numbers__item {
     text-align: center; }
   .numbers__num {
@@ -248,7 +247,7 @@ p {
       position: relative; }
       .feedback__content p:after {
         position: absolute;
-        content: '“';
+        content: 'тАЬ';
         top: -25px;
         left: 0;
         font-family: 'Oswald', sans-serif;
