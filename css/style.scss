@@ -32,16 +32,12 @@
 html {
   scroll-behavior: smooth;
 }
-html * {
-  max-height: 1000000px;
-}
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-family: 'Oswald', sans-serif;
-  -webkit-text-size-adjust: none;
 }
 p {
   margin: 0;
@@ -120,7 +116,7 @@ p {
 
     & span {
       padding-left: 33px;
-      background: url("../img/icon/request-icon.svg") no-repeat left 3px;
+      background: url("../img/icon/request-icon.svg") no-repeat left calc(50% + 1px);
       background-size: 18px;
     }
   }
