@@ -100,7 +100,8 @@ p {
         font-size: 0.75em; } }
     .request__btn span {
       padding-left: 33px;
-      background: url("../img/icon/request-icon.svg") no-repeat left 3px; }
+      background: url("../img/icon/request-icon.svg") no-repeat left 3px;
+      background-size: 18px; }
 
 .header {
   z-index: 2;
