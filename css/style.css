@@ -243,7 +243,7 @@ p {
       position: relative; }
       .feedback__content p:after {
         position: absolute;
-        content: 'тАЬ';
+        content: '“';
         top: -25px;
         left: 0;
         font-family: 'Oswald', sans-serif;
