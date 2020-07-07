@@ -130,7 +130,8 @@ p {
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../img/icon/navbar-toggler-icon.svg");
-  background-size: 21px; }
+  background-size: 21px;
+  background-position: center; }
 
 .intro {
   position: relative;
