@@ -22,6 +22,12 @@
   src: local("☺"), url("../fonts/Oswald-Bold.woff") format("woff"), url("../fonts/Oswald-Bold.ttf") format("truetype"), url("../fonts/Oswald-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal; }
+html, body {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
