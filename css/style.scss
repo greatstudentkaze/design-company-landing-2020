@@ -32,6 +32,9 @@
 html {
   scroll-behavior: smooth;
 }
+html * {
+  max-height: 1000000px;
+}
 body {
   margin: 0;
   padding: 0;
