@@ -148,12 +148,14 @@ p {
 
 .intro {
   position: relative;
-  height: 100vh;
-  padding-top: 192px;
-  //padding-bottom: 150px;
-  padding-bottom: 320px;
+  height: 740px;
+  padding-bottom: 100px;
   background: #404149 url("../img/intro-bg.jpg") no-repeat center;
   background-size: cover;
+
+  @media (max-width: 407px) {
+    padding-bottom: 50px;
+  }
 
   &__content {
     max-width: 734px;
@@ -164,23 +166,33 @@ p {
     @media (max-width: 1200px) {
       max-width: 600px;
     }
+    @media (max-width: 600px) {
+      max-width: 380px;
+    }
   }
   &__title {
     margin: 0 0 25px;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 95px;
     letter-spacing: 0.02em;
     
     @media (max-width: 1200px) {
-      font-size: 48px;
+      font-size: 3em;
+    }
+    @media (max-width: 407px) {
+      font-size: 2.5em;
     }
   }
   &__subtitle {
     margin: 0;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 27px;
+
+    @media (max-width: 407px) {
+    font-size: 1em;
+  }
   }
 }
 
@@ -193,10 +205,12 @@ p {
   background: #f7f7f7;
 
   @media (max-width: 576px) {
-    position: static;
+    padding: 50px;
+  }
+  @media (max-width: 407px) {
+    //position: static;
     margin-top: 50px;
     margin-bottom: 100px;
-    padding: 50px;
   }
 
   &__item {
