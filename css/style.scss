@@ -225,7 +225,7 @@ p {
   padding: 57px 130px;
   background: #f7f7f7;
 
-  @media (max-width: 576px) {
+  @media (max-width: 575.98px) {
     padding: 50px;
   }
   @media (max-width: 407px) {
@@ -359,6 +359,16 @@ p {
     padding: 59px 92px 59px 86px;
     text-align: center;
     background: #F7F7F7;
+
+    @media (max-width: 1199.98px) {
+      padding: 59px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 59px 39px;
+    }
+    @media (max-width: 575.98px) {
+      padding: 59px;
+    }
   }
   &__item-icon {
     margin-bottom: 30px;
@@ -399,7 +409,7 @@ p {
       opacity: 1;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 575.98px) {
       flex-basis: 50%;
     }
   }

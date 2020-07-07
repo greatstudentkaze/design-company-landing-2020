@@ -185,7 +185,7 @@ p {
   left: 0;
   padding: 57px 130px;
   background: #f7f7f7; }
-  @media (max-width: 576px) {
+  @media (max-width: 575.98px) {
     .numbers {
       padding: 50px; } }
   @media (max-width: 407px) {
@@ -289,6 +289,15 @@ p {
     padding: 59px 92px 59px 86px;
     text-align: center;
     background: #F7F7F7; }
+    @media (max-width: 1199.98px) {
+      .services__item {
+        padding: 59px; } }
+    @media (max-width: 767.98px) {
+      .services__item {
+        padding: 59px 39px; } }
+    @media (max-width: 575.98px) {
+      .services__item {
+        padding: 59px; } }
   .services__item-icon {
     margin-bottom: 30px; }
   .services__item-description {
@@ -316,7 +325,7 @@ p {
     transition: 0.3s; }
   .portfolio__item:hover::after {
     opacity: 1; }
-  @media (max-width: 576px) {
+  @media (max-width: 575.98px) {
     .portfolio__item {
       flex-basis: 50%; } }
 .portfolio__img {
