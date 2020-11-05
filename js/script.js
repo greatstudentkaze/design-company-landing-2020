@@ -38,3 +38,41 @@ const collapseMenu = () => {
 }
 
 navLinksArray.forEach(item => item.addEventListener('click', collapseMenu));
+
+
+// Анимация
+const animatedItems = document.querySelectorAll('.js-animated');
+
+if (animatedItems.length) {
+    const getOffset = element => {
+        const rect = element.getBoundingClientRect(),
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+    };
+
+    const animateOnScroll = () => {
+        animatedItems.forEach(item => {
+            const itemHeight = item.offsetHeight,
+              itemOffset = getOffset(item).top,
+              startIndex = 4;
+
+            let itemStartPoint = itemHeight > window.innerHeight
+              ? window.innerHeight - window.innerHeight / startIndex
+              : window.innerHeight - itemHeight / startIndex;
+
+            if ((pageYOffset > itemOffset - itemStartPoint) && (pageYOffset < itemOffset + itemHeight)) {
+                item.classList.add('js-animated-active');
+            } else {
+                if (!item.classList.contains('js-animated--no-hide')) {
+                    item.classList.remove('js-animated-active');
+                }
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+
+    setTimeout(() => animateOnScroll(), 300);
+}
