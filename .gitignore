@@ -2,3 +2,4 @@
 **/*/.sass-cache
 styles/sass/**/*.css
 styles/sass/**/*.map
+!styles/sass/style.css
