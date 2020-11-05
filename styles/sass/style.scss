@@ -11,6 +11,18 @@
   text-align: center;
 }
 
+.animation-show {
+  transform: translateY(120%);
+  opacity: 0;
+  transition: 0.8s ease;
+
+  &.js-animated--active,
+  .js-animated--active & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .request {
   padding-top: 30px;
   padding-bottom: 45px;
