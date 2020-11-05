@@ -176,7 +176,7 @@
       margin-bottom: 15px;
     }
 
-    &.js-animated-active {
+    &.js-animated--active {
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -196,7 +196,7 @@
       font-size: 1em;
     }
 
-    &.js-animated-active {
+    &.js-animated--active {
       transform: translate(0, 0);
       opacity: 1;
       transition-delay: 0.4s;

@@ -63,10 +63,10 @@ if (animatedItems.length) {
               : window.innerHeight - itemHeight / startIndex;
 
             if ((pageYOffset > itemOffset - itemStartPoint) && (pageYOffset < itemOffset + itemHeight)) {
-                item.classList.add('js-animated-active');
+                item.classList.add('js-animated--active');
             } else {
                 if (!item.classList.contains('js-animated--no-hide')) {
-                    item.classList.remove('js-animated-active');
+                    item.classList.remove('js-animated--active');
                 }
             }
         });
